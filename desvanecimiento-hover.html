@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de Desvanecimiento en Hover</title>
+    <style>
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            cursor: default;
+        }
+        .fade-image {
+            width: 300px; /* Ajusta el tamaño de la imagen según necesites */
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fade-image:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://ibb.co/343XCpR"><img src="https://i.ibb.co/343XCpR/Captura-de-pantalla-2024-08-12-104623.webp" alt="Captura-de-pantalla-2024-08-12-104623" class="fade-image"></a>
+
+</body>
+</html>

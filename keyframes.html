@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Animaciones con Keyframes en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .example {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Ejemplo de animación simple */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            margin: 20px auto;
+            animation: move 2s infinite alternate;
+        }
+
+        /* Definición de la animación con keyframes */
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+
+        /* Otro ejemplo: rotación */
+        .rotate-box {
+            width: 100px;
+            height: 100px;
+            background-color: #28a745;
+            margin: 20px auto;
+            animation: rotate 4s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tutorial de Animaciones con Keyframes en CSS</h1>
+</header>
+
+<section>
+    <h2>¿Qué es una animación con Keyframes?</h2>
+    <p>Las animaciones con <code>@keyframes</code> en CSS te permiten animar los elementos HTML, definiendo cómo cambian sus estilos en diferentes puntos del tiempo. Puedes especificar estos cambios en una serie de pasos o "frames", desde el inicio (0%) hasta el final (100%) de la animación.</p>
+</section>
+
+<section>
+    <h2>Ejemplo 1: Mover una caja</h2>
+    <p>En este ejemplo, una caja se moverá de izquierda a derecha usando <code>@keyframes</code>:</p>
+    
+    <div class="example">
+        <div class="box"></div>
+    </div>
+
+    <h3>Código CSS:</h3>
+    <pre><code>
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 20px auto;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+    </code></pre>
+</section>
+
+<section>
+    <h2>Ejemplo 2: Rotar una caja</h2>
+    <p>Este ejemplo muestra cómo hacer que una caja gire continuamente usando <code>@keyframes</code>:</p>
+    
+    <div class="example">
+        <div class="rotate-box"></div>
+    </div>
+
+    <h3>Código CSS:</h3>
+    <pre><code>
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #28a745;
+    margin: 20px auto;
+    animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    </code></pre>
+</section>
+
+</body>
+</html>
