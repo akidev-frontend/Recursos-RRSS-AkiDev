@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de Parpadeo en Texto</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        @keyframes parpadeo {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .texto-parpadeo {
+            font-size: 44px;
+            font-weight: bold;
+            color: #000;
+            animation: parpadeo 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto-parpadeo">AkiDev</div>
+</body>
+</html>
