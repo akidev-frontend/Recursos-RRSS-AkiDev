@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Neumórfico</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+
+        .neumorphic-button {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 15px;
+            padding: 20px 40px;
+            font-size: 18px;
+            color: #333;
+            box-shadow: 8px 8px 16px #bebebe,
+                        -8px -8px 16px #ffffff;
+            outline: none;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .neumorphic-button:active {
+            box-shadow: inset 8px 8px 16px #bebebe,
+                        inset -8px -8px 16px #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="neumorphic-button">AkiDev</button>
+
+</body>
+</html>
