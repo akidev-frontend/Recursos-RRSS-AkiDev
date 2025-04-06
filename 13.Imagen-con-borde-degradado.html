@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con Borde Degradado</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .imagen-con-borde {
+      width: 300px;
+      border: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff00cc, #3333ff);
+      border-image-slice: 1;
+      display: inline-block;
+    }
+
+    .imagen-con-borde img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="imagen-con-borde">
+    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g1m0K7yumfwkc_ub224a4AHaE7%26pid%3DApi&sp=1743954515T3dc82cceb1980724df8da4e5e5dc42d55a626ec8ff65106aabb3adc5dbeca32e" alt="Ejemplo de imagen con borde degradado">
+  </div>
+</body>
+</html>
